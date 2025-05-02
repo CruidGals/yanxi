@@ -1,0 +1,69 @@
+/* Defualt Styles */
+
+a {
+    text-decoration: none;
+    transition: color 0.1s ease-in-out;
+}
+
+a:hover {
+    color: orange;
+}
+
+body {
+    padding-top: 55px;
+}
+
+/* ---------- Navbar styles ---------- */
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; /* Adjust if needed */
+}
+
+/* ---------- Profile styles ---------- */
+
+.profile-image {
+    display: flex;
+    width: 100px;
+}
+
+/* ---------- Research ---------- */
+
+.research-title {
+    font-weight: bold;
+}
+
+.research-contributors {
+    font-style: italic;
+}
+
+/* ---------- Image styles ---------- */
+
+.gallery-image {
+    width: 100%;
+    height: 300px; /* fixed height you want */
+    aspect-ratio: 1;
+    object-fit: cover; /* crop the image nicely */
+
+    /* Site entering transition */
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease-in-out;
+}
+
+.gallery-image-small {
+    width: 100%;
+    height: 200px; /* fixed height you want */
+    aspect-ratio: 1;
+    object-fit: cover; /* crop the image nicely */
+
+    /* Site entering transition */
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease-in-out;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
