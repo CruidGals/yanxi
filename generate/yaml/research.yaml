@@ -1,0 +1,33 @@
+# Generate HTML for research publications using this yaml file
+# 
+# A research block follows this format:
+#
+# - title: [Title of the publication]
+#   authors: [Authors of the publication]
+#   publisher: [Publisher of the publication]
+#   year: [Year it was published]
+#   links:
+#     - type: Type of media that you are linking
+#       url: Url to the media
+#     - type:
+#       url:
+#     (etc.)
+
+research:
+
+  - title: Image-based Stability Quantification
+    authors: Jesse Scott, John Challis, Robert T. Collins and Yanxi Liu
+    publisher: IEEE Transaction on Neural Systems & Rehabilitation Engineering
+    year: 2022
+    links:
+      - type: Paper
+        url: https://arxiv.org/abs/2206.11443
+  
+  - title: Novel 3D Scene Understanding Applications From Recurrence in a Single Image
+    authors: Shimian Zhang, Skanda Bharadwaj, Keaton Kraiger, Yashasvi Asthana, Hong Zhang, Robert T. Collins and Yanxi Liu
+    publisher: Arxiv Preprint
+    year: 2022
+    links:
+      - type: Paper
+        url: https://arxiv.org/abs/2210.07991
+  
