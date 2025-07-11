@@ -59,32 +59,32 @@ def generate_navbar_html(data):
     """
 
     # Navbar boilerplate html
-    navbar = """<nav class="navbar fixed-top navbar-expand-md bg-dark navbar-dark">
+    navbar = """<nav class="navbar fixed-top navbar-expand-md">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">Dr. Yanxi Liu</a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <button class="navbar-toggler bg-white rounded mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
+                <ul class="navbar-nav ms-auto bg-white rounded">
+                    <li class="nav-item px-3 px-md-0">
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item px-3 px-md-0">
                         <a class="nav-link" href="index.html#whatsNewBlock">What's New</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item px-3 px-md-0">
                         <a class="nav-link" href="index.html#researchBlock">Research</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item px-3 px-md-0">
                         <a class="nav-link" href="index.html#teachingBlock">Teaching</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item px-3 px-md-0">
                         <a class="nav-link" href="index.html#serviceBlock">Service</a>
                     </li>
-                    <li class="nav-item active dropdown">
+                    <li class="nav-item px-3 px-md-0 active dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Personal</a>
                         <ul class="dropdown-menu">
                             {dropdown_items}

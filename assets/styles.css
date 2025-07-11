@@ -13,6 +13,14 @@ body {
     padding-top: 55px;
 }
 
+h2 {
+    margin: 0;
+}
+
+.section {
+    padding: 3rem 10vw;
+}
+
 /* ---------- Navbar styles ---------- */
 
 .nav-item.dropdown:hover .dropdown-menu {
