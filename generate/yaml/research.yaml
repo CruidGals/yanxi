@@ -14,6 +14,8 @@
 #     (etc.)
 
 research:
+  
+  # 2022 -----------------------------------
 
   - title: Image-based Stability Quantification
     authors: Jesse Scott, John Challis, Robert T. Collins and Yanxi Liu
@@ -31,6 +33,18 @@ research:
       - type: Paper
         url: https://arxiv.org/abs/2210.07991
 
+  # 2021 -----------------------------------
+
+  - title: Computational Symmetry
+    authors: Yanxi Liu, Katsushi Ikeuchi
+    publisher: Computer Vision. Springer Nature
+    year: 2021
+    links:
+      - type: Paper
+        url: https://link.springer.com/referenceworkentry/10.1007/978-3-030-03243-2_640-2
+
+  # 2020 -----------------------------------
+
   - title: PSU Taiji MultiModal (PSU-TMM100) Dataset
     authors: Keaton Kraiger, Yanxi Liu, Jesse Scott, Robert Collins, Jonh Challis, Bharadwaj Ravichandran
     publisher: European Computer Vision Association (ECCV)
@@ -41,10 +55,226 @@ research:
       - type: Dataset
         url: http://vision.cse.psu.edu/data/data.shtml
 
-  - title: Computational Symmetry
-    authors: Yanxi Liu, Katsushi Ikeuchi
-    publisher: Computer Vision. Springer Nature
-    year: 2021
+  # 2017 -----------------------------------
+
+  - title: "Beyond Planar Symmetry: Modeling human perception of reflection and rotation symmetries in the wild"
+    authors: Yanxi Liu, Christopher Funk
+    publisher: Arxiv Preprint
+    year: 2017
     links:
       - type: Paper
-        url: https://link.springer.com/referenceworkentry/10.1007/978-3-030-03243-2_640-2
+        url: https://www.researchgate.net/publication/316075758_Beyond_Planar_Symmetry_Modeling_human_perception_of_reflection_and_rotation_symmetries_in_the_wild
+
+  - title: "4D Model-Based Spatiotemporal Alignment of Scripted Taiji Quan Sequences"
+    authors: Yanxi Liu, Robert Collins, Jesse Scott, Christopher Funk
+    publisher: IEEE
+    year: 2017
+    links:
+      - type: Paper   
+        url: https://www.researchgate.net/publication/319311636_4D_Model-Based_Spatiotemporal_Alignment_of_Scripted_Taiji_Quan_Sequences
+
+  - title: "2017 ICCV Challenge: Detecting Symmetry in the Wild"
+    authors: Yanxi Liu, Christopher Funk, Seungkyu Lee, Martin R. Oswald, Andrea Cohen, Stavros Tsogkas, Wei Shen, Sven J. Dickinson
+    publisher: IEEE
+    year: 2017
+    links:
+      - type: Paper   
+        url: https://www.researchgate.net/publication/319311740_2017_ICCV_Challenge_Detecting_Symmetry_in_the_Wild
+      - type: Website
+        url: https://sites.google.com/view/symcomp17
+
+  - title: "Symmetry-Aware Façade Parsing with Occlusions"
+    authors: Yanxi Liu, Martin R. Oswald, Andrea Cohen, Marc Pollefeys
+    publisher: IEEE
+    year: 2017
+    links:
+      - type: Paper   
+        url: https://www.researchgate.net/publication/319461353_Symmetry-Aware_Facade_Parsing_with_Occlusions
+
+  # 2016 -----------------------------------
+
+  - title: Representation of Maximally Regular Textures in Human Visual Cortex
+    authors: Peter J Kohler, Alasdair Clarke, Alexandra Yakovleva, Yanxi Liu, Anthony M Norcia
+    publisher: Journal of Neuroscience
+    year: 2016
+    links:
+      - type: Paper   
+        url: https://www.researchgate.net/publication/288003915_Representation_of_Maximally_Regular_Textures_in_Human_Visual_Cortex_The_Journal_of_Neuroscience
+      - type: Website
+        url: https://sites.psu.edu/eecslpac/symmetry-group-based-regularity-perception-in-human-and-computer-vision/
+
+  - title: Regularity-Driven Building Façade Matching between Aerial and Street Views
+    authors: Yanxi Liu, Robert Collins, Mark Wolff
+    publisher: CVPR
+    year: 2016
+    links:
+      - type: Paper   
+        url: https://www.researchgate.net/publication/296706513_Regularity-Driven_Building_Facade_Matching_between_Aerial_and_Street_Views
+
+  - title: Symmetry reCAPTCHA
+    authors: Yanxi Liu, Christopher Funk
+    publisher: CVPR
+    year: 2016
+    links:
+      - type: Paper   
+        url: https://www.researchgate.net/publication/296706719_Symmetry_reCAPTCHA
+
+  - title: Human Visual Perception of the 17 Wallpaper-Group Patterns using Timed Trials
+    authors: Yanxi Liu, Jeremy Cole, David Reitter
+    publisher: Vision Science Society
+    year: 2016
+    links:
+      - type: Paper   
+        url: https://www.researchgate.net/publication/307904113_Human_Visual_Perception_of_the_17_Wallpaper-Group_Patterns_using_Timed_Trials
+
+  - title: "LabelMeSymmetry: a tool for human symmetry perception"
+    authors: Yanxi Liu, Christopher Funk
+    publisher: Vision Science Society
+    year: 2016
+    links:
+      - type: Paper   
+        url: https://www.researchgate.net/publication/307904113_Human_Visual_Perception_of_the_17_Wallpaper-Group_Patterns_using_Timed_Trials
+
+  - title: Symmetry Features and Group Hierarchy Model of Human Symmetry Perception
+    authors: Yanxi Liu, Jeremy Cole, David Reitter
+    publisher: International Meeting of Psychonomic Society
+    year: 2016
+    links:
+      - type: Poster   
+        url: https://bpb-us-e1.wpmucdn.com/sites.psu.edu/dist/3/182370/files/2025/02/cole_2016.pdfs
+
+  - title: Symmetry-based interpolation in images
+    authors: Yanxi Liu, Arthur Robert Pope, Vivek Verma, Stephen Charles Hsu
+    publisher: Google Inc.
+    year: 2016
+    links:
+      - type: Patent   
+        url: https://patents.justia.com/patent/9240055#claims
+
+  - title: Entrance detection from street-level imagery
+    authors: Yanxi Liu, Jingchen Liu, Vasudev Parameswaran, Thommem Korah, Varsha Hedau, Radek Grzeszczuk
+    publisher: Uber Technologies, Inc.
+    year: 2016
+    links:
+      - type: Patent   
+        url: https://patents.justia.com/patent/9235775
+
+  # 2015 -----------------------------------
+
+  - title: Dancing with Turks 
+    authors: Yanxi Liu, Jingchen Liu, I-Kao Chiang, Alyssa Lees, Ian Spiro, Christoph Bregler
+    publisher: ACM Multimedia
+    year: 2015
+    links:
+      - type: Paper   
+        url: http://www.researchgate.net/publication/280054406_Dancing_with_Turks_%28ACM_Multimedia_2015_long_paper%29
+
+  - title: Parametric Responses to Rotation Symmetry in Mid-level Visual Cortex
+    authors: Peter Kohler, Alexandra Yakovleva, Alasdair Clarke, Yanxi Liu, Anthony Norcia
+    publisher: Vision Sciences Society
+    year: 2015
+    links:
+      - type: Abstract   
+        url: https://jov.arvojournals.org/article.aspx?articleid=2434232
+      - type: Website
+        url: https://sites.psu.edu/eecslpac/symmetry-group-based-regularity-perception-in-human-and-computer-vision/
+
+  - title: The salience of Lower-Order Features in Highly Self-Similar Walllpaper Groups
+    authors: Shivam Vedak, Rick Gilmore, Peter Kohler, Yanxi Liu, Anthony Norcia
+    publisher: Vision Sciences Society
+    year: 2015
+    links:
+      - type: Absract   
+        url: hhttps://jov.arvojournals.org/article.aspx?articleid=2433947
+      - type: Website
+        url: https://sites.psu.edu/eecslpac/symmetry-group-based-regularity-perception-in-human-and-computer-vision/
+
+  - title: The salience of Lower-Order Features in Highly Self-Similar Walllpaper Groups
+    authors: Shivam Vedak, Rick Gilmore, Peter Kohler, Yanxi Liu, Anthony Norcia
+    publisher: Vision Sciences Society
+    year: 2015
+    links:
+      - type: Absract   
+        url: hhttps://jov.arvojournals.org/article.aspx?articleid=2433947
+      - type: Website
+        url: https://sites.psu.edu/eecslpac/symmetry-group-based-regularity-perception-in-human-and-computer-vision/
+
+  # 2014 -----------------------------------
+
+  - title: Local Regularity-driven City-scale Facade Detection from Aerial Images  
+    authors: Yanxi Liu, Jingchen Liu
+    publisher: CVPR
+    year: 2014
+    links:
+      - type: Paper   
+        url: https://www.researchgate.net/publication/260382493_Local_Regularity-driven_City-scale_Facade_Detection_from_Aerial_Images_CVPR_2014_oral_presentation
+      - type: Project Page
+        url: https://sites.psu.edu/eecslpac/regularity-driven-urban-scene-understanding/  
+
+  - title: 3D Blob based Brain Tumor Detection and Segmentation in MR Images
+    authors: Yanxi Liu, Robert Collins, Guilherme Cesar Soares Ruppert, Chen-Ping Yu, Alexandre Xavier, Dan Thach Dam Nguyen
+    publisher: IEEE
+    year: 2014
+    links:
+      - type: Paper   
+        url: https://www.researchgate.net/publication/259482926_3D_Blob_based_Brain_Tumor_Detection_and_Segmentation_in_MR_Images
+      - type: Project Page
+        url: https://sites.psu.edu/eecslpac/brain-tumor-detection/
+
+  - title: Estimating the Camera Direction of a Geotagged Image using Reference Images
+    authors: Minwoo Park, Jiebo Luo, Robert T. Collins, Yanxi Liu
+    publisher: Pattern Recognition Journal
+    year: 2014
+    links:
+      - type: Paper   
+        url: https://www.researchgate.net/publication/261251793_Estimating_the_Camera_Direction_of_a_Geotagged_Image_using_Reference_Images
+      - type: Project Page
+        url: https://sites.psu.edu/eecslpac/brain-tumor-detection/
+
+  # 2013 -----------------------------------   
+
+  - title: Tracking Sports Players with Context-Conditioned Motion Models
+    authors: Jingchen Liu, Peter Carr, Robert T. Collins and Yanxi Liu
+    publisher: CVPR
+    year: 2013
+    links:
+      - type: Paper   
+        url: https://www.researchgate.net/publication/237009469_Tracking_Sports_Players_with_Context-Conditioned_Motion_Models
+
+  - title: GRASP Recurring Patterns from a Single View
+    authors: Yanxi Liu, Jingchen Liu
+    publisher: CVPR
+    year: 2013
+    links:
+      - type: Paper   
+        url: https://www.researchgate.net/publication/237009285_GRASP_recurring_patterns_from_a_single_view
+
+  # 2012 -----------------------------------   
+
+  - title: Curved Glide-Reflection Symmetry Detection
+    authors: Seungkyu Lee, Yanxi Liu
+    publisher: The IEEE Transaction on Pattern Analysis and Machine Intelligence (TPAMI)
+    year: 2012
+    links:
+      - type: Paper   
+        url: http://vision.cse.psu.edu/publications/pdfs/2012curveSymPAMI.pdf
+      - type: Project Page
+        url: http://vision.cse.psu.edu/research/curvedSym/index.shtml
+
+  - title: Local Expert Forest of Score Fusion for Video Event Classification
+    authors: Jingchen Liu, Scott McCloskey, Yanxi Liu
+    publisher: ECCV
+    year: 2012
+    links:
+      - type: Paper   
+        url: https://link.springer.com/chapter/10.1007/978-3-642-33715-4_29
+
+  - title: Statistical Asymmetry-based Brain Tumor Segmentation from 3D MR Images
+    authors: Chenping Yu, Guilherme C. S. Ruppert, Dan T. D. Nguyen, Alexandre X. Falcao, Yanxi Liu.
+    publisher: 5th international joint conference on biomedical engineering systems and technologies
+    year: 2012
+    links:
+      - type: Paper   
+        url: http://vision.cse.psu.edu/research/brainAsym/2012Yu1.pdf
+      - type: Project Page
+        url: http://vision.cse.psu.edu/research/brainAsym/index.shtml
