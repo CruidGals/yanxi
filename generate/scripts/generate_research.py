@@ -1,6 +1,7 @@
 import yaml
 from pathlib import Path
 import argparse
+from collections import defaultdict
 
 research_template = '''
 <div class="research-list">
@@ -8,34 +9,60 @@ research_template = '''
 </div>
 '''
 
-def generate_research_block(data):
+def generate_research_block(year_map, data):
+    """
+    Generates the research blocks and categorizes them by year in year_map
+    """
+
     # Parse the links first
     if 'links' in data:
         links_html = "".join([f'''<a href="{link['url']}">{link['type']}</a>''' for link in data['links']])
 
     # Every research paper requires title, authors, publishers, and years
     research_html = f'''<div class="research m-3">
-        <div class="research-title">{data['title']}</div>
-        <div class="research-contributors">{data['authors']}</div>
-        <div class="research-other">{data['publisher']}, {data['year']}</div>
-        {links_html}
-    </div>
+                <div class="research-title">{data['title']}</div>
+                <div class="research-contributors">{data['authors']}</div>
+                <div class="research-other">{data['publisher']}, {data['year']}</div>
+                {links_html}
+            </div>
     '''
 
-    return research_html
+    year_map[data['year']].append(research_html)
+
+def generate_research_grouped(year_map):
+    """
+    Formally puts the research blocks into a format categorized by the year
+    """
+
+    # Sort the keys in decreasing fashion
+    sorted_keys = sorted(year_map.keys(), reverse=True)
+    research_groups = []
+
+    for key in sorted_keys:
+        research_blocks_html = "".join(year_map[key])
+        research_group = f'''<h3 class="research-year">{key}</h3>
+        <div class="research-group">
+            {research_blocks_html}
+        </div>
+        '''
+
+        research_groups.append(research_group)
+
+    return research_groups
+
 
 def generate_research_html(yaml_path, output_path):
     # Load the yaml file to read
     with open(yaml_path, 'r', encoding='utf-8') as f:
         data = yaml.safe_load(f)
 
-    # Parse research data into html
-    research_blocks = []
+    # Parse research data into html (sorted by year)
+    research_blocks = defaultdict(list)
     for research_data in data.get('research', []):
-        research_blocks.append(generate_research_block(research_data))
+        generate_research_block(research_blocks, research_data)
 
-    research_blocks_html = "".join(research_blocks)
-    research_html = research_template.format(research=research_blocks_html)
+    research_groups_html = "".join(generate_research_grouped(research_blocks))
+    research_html = research_template.format(research=research_groups_html)
     
     Path(output_path).parent.mkdir(parents=True, exist_ok=True)
     with open(output_path, 'w', encoding='utf-8') as f:

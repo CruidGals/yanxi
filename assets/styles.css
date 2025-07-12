@@ -37,6 +37,23 @@ h2 {
 
 /* ---------- Research ---------- */
 
+.research-year {
+    padding-top: 1rem;
+    padding-left: 2rem;
+}
+
+.research {
+    padding: 1rem 4rem;
+}
+
+.research a { 
+    padding-right: 1rem;
+}
+
+.research-group .research:first-child {
+    padding: 0 4rem;
+}
+
 .research-title {
     font-weight: bold;
 }

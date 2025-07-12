@@ -30,4 +30,21 @@ research:
     links:
       - type: Paper
         url: https://arxiv.org/abs/2210.07991
-  
+
+  - title: PSU Taiji MultiModal (PSU-TMM100) Dataset
+    authors: Keaton Kraiger, Yanxi Liu, Jesse Scott, Robert Collins, Jonh Challis, Bharadwaj Ravichandran
+    publisher: European Computer Vision Association (ECCV)
+    year: 2020
+    links:
+      - type: Paper
+        url: https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123680528.pdf
+      - type: Dataset
+        url: http://vision.cse.psu.edu/data/data.shtml
+
+  - title: Computational Symmetry
+    authors: Yanxi Liu, Katsushi Ikeuchi
+    publisher: Computer Vision. Springer Nature
+    year: 2021
+    links:
+      - type: Paper
+        url: https://link.springer.com/referenceworkentry/10.1007/978-3-030-03243-2_640-2
