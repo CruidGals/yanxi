@@ -28,5 +28,160 @@ teaching:
     course-code: CMPSC 458
     year: 2022
     semester: Fall
-
   
+  # 2021 -----------------------------------
+
+  - title: Group Theory-based Pattern Discovery
+    course-code: CSE 597.001
+    year: 2021
+  
+  - title: Fundamentals of Computer Graphics
+    course-code: CMPSC 458
+    year: 2021
+
+  - title: Humanoid Robots Simulation (kinematics, dynamics, vision)
+    course-code: CMPEN 497.001
+    year: 2021
+    links:
+      - type: Course Info
+        url: https://sites.psu.edu/eecslpac/courses/
+      - type: Dances designed by girls from Dancing with Robots
+        url: https://sites.psu.edu/dancingwithrobots/
+  
+  - title:  Pattern Recognition and Machine Learning 
+    course-code: CSE 583/EE 552
+    year: 2021
+
+  # 2020 -----------------------------------
+
+  - title: Pattern Recognition and Machine Learning
+    course-code: CSE 583/EE 552
+    year: 2020
+    semester: Spring
+  
+  - title: Fundamentals of Computer Graphics
+    course-code: CMPSC 458
+    year: 2020
+    semester: Fall
+
+  # 2019 -----------------------------------
+
+  - title: Pattern Recognition and Machine Learning
+    course-code: CSE 583/EE 552
+    year: 2019
+    semester: Spring
+
+  - title: "Group Theory for Data Science: Theory, computation and applications"
+    course-code: CSE 597
+    year: 2019
+    semester: Fall
+  
+  - title: Fundamentals of Computer Graphics
+    course-code: CMPSC 458
+    year: 2019
+    semester: Fall
+
+  # 2018 -----------------------------------
+
+  - title: Pattern Recognition and Machine Learning
+    course-code: CSE 583/EE 552
+    year: 2018
+    semester: Spring
+  
+  - title: Computer Graphics
+    course-code: CMPSC 458
+    year: 2018
+    semester: Fall
+
+  # 2017 -----------------------------------
+
+  - title: Fundamentals of Computer Graphics
+    course-code: CMPSC 458
+    year: 2017
+    semester: Fall
+
+  # 2016 -----------------------------------
+
+  - title: Pattern Recognition and Machine Learning
+    course-code: CSE 583/EE 552
+    year: 2016
+    semester: Spring
+
+  - title: Computational Regularity
+    course-code: ETHZ
+    year: 2016
+    semester: Fall
+    links:
+      - type: Course Info
+        url: https://www.cse.psu.edu/~rtc12/CSE598G/
+
+  # 2016 -----------------------------------
+
+  - title: Pattern Recognition and Machine Learning
+    course-code: CSE 583/EE 552
+    year: 2015
+    semester: Spring
+
+  - title: Theoretical, Computational and Experimental Regularity on Interdisciplinary, Large Data Sets
+    course-code: CSE 597K
+    year: 2015
+    semester: Spring
+    links:
+      - type: Similar Course taught by Professor Liu at Stanford
+        url: http://graphics.stanford.edu/courses/cs468-14-winter/
+
+  - title: Deep-learning for Pattern Discovery
+    course-code: CSE 597E
+    year: 2015
+    semester: Fall
+
+  - title: Computer Graphics
+    course-code: CMPSC 458
+    year: 2015
+    semester: Fall
+    links:
+      - type: Highlights
+        url: https://www.dropbox.com/s/tkf5v5hy39ra16s/CMPSC458-Mid_Quality.mp4?dl=0
+  
+  # 2014 -----------------------------------
+
+  - title: Symmetry Group-based Learning for Pattern Discovery from Big Data
+    course-code: Tsinghua University
+    year: 2014
+    semester: Fall
+
+  - title: Computational Symmetry and Regularity
+    course-code: Stanford University, Winter Quarter
+    year: 2014
+    links:
+      - type: Course Info
+        url: https://graphics.stanford.edu/courses/cs468-14-winter/
+
+  - title: Fundamentals of Computer Graphics
+    course-code: CMPSC 458
+    year: 2014
+    semester: Fall
+
+  # 2013 -----------------------------------
+
+  - title: Pattern Recognition and Machine Learning
+    course-code: CSE 583/EE 552
+    year: 2013
+    semester: Spring
+
+  # 2012 -----------------------------------
+
+  - title: Pattern Recognition and Machine Learning
+    course-code: CSE 583/EE 552
+    year: 2012
+    semester: Spring
+
+  - title: Theoretical, Computational and Experimental Regularity on Interdisciplinary, Large Data Sets
+    course-code: CSE 598D
+    year: 2012
+    semester: Fall
+
+  - title: Computer Graphics
+    course-code: CMPSC 458
+    year: 2012
+    semester: Fall
