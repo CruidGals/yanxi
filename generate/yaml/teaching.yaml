@@ -1,0 +1,32 @@
+# Generate HTML for teaching publications using this yaml file
+# 
+# A teaching block follows this format:
+#
+# - title: [Title of the course]
+#   course-code: [Course code of the course]
+#   year: [Year that the course was taught in]
+#   semester: [If applicable, note the semester it was taught in (Spring or Fall)]
+#   links:
+#     - type: Type of media that you are linking (Will be placeholder for the link)
+#       url: Url to the media
+#     - type:
+#       url:
+#     (etc.)
+#
+# If there is anything else you would want added onto this file, notify the owner of this webpage
+
+teaching:
+  
+  # 2022 -----------------------------------
+
+  - title: Pattern Recognition and Machine Learning (PRML)
+    course-code: CSE 583/EE 552
+    year: 2022
+    semester: Spring
+  
+  - title: Fundamentals of Computer Graphics 
+    course-code: CMPSC 458
+    year: 2022
+    semester: Fall
+
+  
