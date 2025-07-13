@@ -17,12 +17,14 @@ def generate_research_block(year_map, data):
     # Parse the links first
     if 'links' in data:
         links_html = "".join([f'''<a href="{link['url']}">{link['type']}</a>''' for link in data['links']])
+    else:
+        links_html = ""
 
     # Every research paper requires title, authors, publishers, and years
-    research_html = f'''<div class="research m-3">
-                <div class="research-title">{data['title']}</div>
-                <div class="research-contributors">{data['authors']}</div>
-                <div class="research-other">{data['publisher']}, {data['year']}</div>
+    research_html = f'''<div class="block">
+                <div class="block-title">{data['title']}</div>
+                <div class="block-contributors">{data['authors']}</div>
+                <div class="block-other">{data['publisher']}, {data['year']}</div>
                 {links_html}
             </div>
     '''
@@ -40,8 +42,8 @@ def generate_research_grouped(year_map):
 
     for key in sorted_keys:
         research_blocks_html = "".join(year_map[key])
-        research_group = f'''<h3 class="research-year">{key}</h3>
-        <div class="research-group">
+        research_group = f'''<h3 class="section-year">{key}</h3>
+        <div class="section-group">
             {research_blocks_html}
         </div>
         '''

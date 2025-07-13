@@ -35,30 +35,27 @@ h2 {
     width: 100px;
 }
 
-/* ---------- Research ---------- */
-
-.research-year {
+.section-year {
     padding-top: 1rem;
     padding-left: 2rem;
 }
-
-.research {
-    padding: 1rem 4rem;
+.block {
+    padding: 1rem 3rem;
 }
 
-.research a { 
+.block a { 
     padding-right: 1rem;
 }
 
-.research-group .research:first-child {
-    padding: 0 4rem;
+.section-group .block:first-child {
+    padding-top: 0rem;
 }
 
-.research-title {
+.block-title {
     font-weight: bold;
 }
 
-.research-contributors {
+.block-contributors {
     font-style: italic;
 }
 
@@ -91,4 +88,9 @@ h2 {
 .visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+/* Teaching Specific */
+.teaching-course-code {
+    font-style: italic;
 }
