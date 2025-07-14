@@ -55,7 +55,7 @@ h2 {
     font-weight: bold;
 }
 
-.block-contributors {
+.block-contributors, .block-metadata {
     font-style: italic;
 }
 
@@ -91,6 +91,13 @@ h2 {
 }
 
 /* Teaching Specific */
+
 .teaching-course-code {
     font-style: italic;
+}
+
+/* Service Specific */
+
+.service-group-list {
+    padding-left: 4rem;
 }

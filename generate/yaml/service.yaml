@@ -1,0 +1,97 @@
+# Generate HTML for service publications using this yaml file
+# 
+# A service block follows this format:
+#
+# - title: [Title of the service, including position]
+#   location: [OPTIONAL: Place where service occurred, including city and state if possible]
+#   date: [OPTIONAL: dates of which the service occurred]
+#   desc: [Any additional description describing your work]
+#   year: [Year that the service was done]
+#   links:
+#     - type: Type of media that you are linking (Will be placeholder for the link)
+#       url: Url to the media
+#     - type:
+#       url:
+#     (etc.)
+#
+# If there is anything else you would want added onto this file, notify the owner of this webpage
+
+service:
+  
+  # 2022 -----------------------------------
+
+  - title: "NIH Special Emphasis Panel: Imaging, Surgery and Bioengineering; NSF Panel"
+    year: 2022
+    
+  - title: ECCV 2022 Best Paper Award Committee Member
+    year: 2022
+    links:
+      - type: Website
+        url: https://eccv2022.ecva.net/organizers/
+
+  - title: CVPR 2022 Paper Award Committee Member
+    year: 2022
+    links:
+      - type: Website
+        url: https://cvpr2022.thecvf.com/cvpr-2022-paper-awards
+
+  - title: Area-Chair for Computer Vision and Pattern Recognition (CVPR) 2022
+    year: 2022
+
+  - title: Area-Chair for The European Conference on Computer Vision (ECCV) 2022
+    year: 2022
+    
+  # 2021 -----------------------------------
+
+  - title: Area-Chair for International Conference of Computer Vision (ICCV) 2021
+    year: 2021
+
+  - title: Area-Chair for Computer Vision and Pattern Recognition (CVPR) 2021
+    year: 2021
+
+  # 2019 -----------------------------------
+
+  - title: Dancing With Robots (DwR) - Co-Organizer
+    location: Penn State University, University Park, PA
+    date: "7/29 - 8/2"
+    desc: Computer Science and Engineering Summer Camp (DwR-CSE)
+    year: 2019
+    links:
+      - type: Website
+        url: https://sites.psu.edu/dancingwithrobots/
+      - type: Women in AI Panelists
+        url: https://sites.psu.edu/dancingwithrobots/women-in-ai/
+
+  - title: Area-Chair for Computer Vision and Pattern Recognition (CVPR) 2019
+    location: Long Beach, CA
+    date: June 2019
+    year: 2019
+    links:
+      - type: Website
+        url: http://cvpr2019.thecvf.com/
+
+  - title: Program Co-Chair for WACV
+    location: Waikoloa, HI
+    date: January 2019
+    year: 2019
+    links:
+      - type: Website
+        url: http://wacv19.uccs.us/people/
+
+  # 2018 -----------------------------------
+
+  - title: Area-Chair for ACCV 2018
+    location: Perth Western, Australia
+    date: December 2018
+    year: 2018
+    links:
+      - type: Website
+        url: http://accv2018.net/
+
+  - title: NIH/NIBIB P41 Site Visit
+    date: June 2018
+    year: 2018
+
+  - title: NIH Special Emphasis Panel (RPHB)
+    date: March 2018
+    year: 2018
