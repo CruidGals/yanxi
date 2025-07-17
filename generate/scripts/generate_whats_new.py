@@ -22,7 +22,7 @@ def generate_whats_new_block(year_map, data):
 
     # Create the image html seperately
     if 'image' in data:
-        image_html = f'''<a href="{data["image"]}" class="glightbox col-12 col-md-4" data-gallery="whats-new-gallery">
+        image_html = f'''<a href="{data["image"]}" class="glightbox col-12 col-md-4">
             <img src="{data["image"]}" class="whats-new-image p-3 rounded-5" alt="{data["image_alt"] if data.get("image_alt") else "What's New Image"}">
         </a>'''
     else:
