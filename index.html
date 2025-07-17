@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="assets/styles.css">
 </head>
@@ -78,8 +79,98 @@
 
     <div class="section bg-light" id="whatsNewBlock">
         <h2>What's New</h2>
-    </div>
 
+<div class="whats_new-list">
+    <h3 class="section-year">2023</h3>
+        <div class="px-5"><ul>
+            <li class="pb-1 container"><div class="row">
+                    <div class="col-12 col-md-8">
+                        <div class="block-title">New Class: Humanoid Robotics (CMPEN 497)</div>
+                        <div class="block-other">We study the kinematics and dynamics of state-of-the-art, programmable humanoid robots from principles of physics, computer vision, and AI to physical simulations and executions on real humanoid robots. We also explore the use of stability analysis in motion.</div>
+                        <a class="pe-3" href="https://sites.psu.edu/eecslpac/courses/">Website</a>
+                    </div>
+                    <a href="assets/images/Robotics_Poster_Spring2023.png" class="glightbox col-12 col-md-4" data-gallery="whats-new-gallery">
+            <img src="assets/images/Robotics_Poster_Spring2023.png" class="whats-new-image p-3 rounded-5" alt="Humanoid Robotics Poster Spring 2023">
+        </a>
+            </div></li>
+    
+        </ul></div>
+        <h3 class="section-year">2022</h3>
+        <div class="px-5"><ul>
+            <li class="pb-1 container"><div class="row">
+                    <div class="col-12 ">
+                        <div class="block-title">Opening: NSF Research Experiences for Undergraduates (REU) Opportunities: Spatiotemporal Pattern Discovery</div>
+                        
+                        
+                    </div>
+                    
+            </div></li>
+    <li class="pb-1 container"><div class="row">
+                    <div class="col-12 ">
+                        <div class="block-title">Theses:</div>
+                        <div class="block-other"><br><strong>Honors Thesis:</strong> <em>Symmetry Detection from Dance Textures</em><br> Weisheng Li; Advisors: Dr. Yanxi Liu<br> <strong>Ph.D. Thesis:</strong> <em>Dynamic Stability Monitoring of Complex Human Motion Sequences via Precision Computer Vision</em><br> Jesse Scott; Advisors: Dr. R.T Collins and Yanxi Liu
+</div>
+                        
+                    </div>
+                    
+            </div></li>
+    
+        </ul></div>
+        <h3 class="section-year">2020</h3>
+        <div class="px-5"><ul>
+            <li class="pb-1 container"><div class="row">
+                    <div class="col-12 ">
+                        <div class="block-title">Opening: Ph.D. student positions on Regularity Perception</div>
+                        <div class="block-other">(Human/Robot, CV/CG, AR/VR, Learning/Optimization)</div>
+                        <a class="pe-3" href="https://sites.psu.edu/eecslpac/explicit-and-implicit-regularity-perception/">Website</a>
+                    </div>
+                    
+            </div></li>
+    <li class="pb-1 container"><div class="row">
+                    <div class="col-12 ">
+                        <div class="block-title">Opening: Undergrad student NSF REU Opportunities: Spatiotemporal Symmetry in Digital Movement Data</div>
+                        
+                        
+                    </div>
+                    
+            </div></li>
+    <li class="pb-1 container"><div class="row">
+                    <div class="col-12 ">
+                        <div class="block-title">Manuscript: From Image to Stability: Learning Dynamics from Human Pose</div>
+                        <div class="block-other"><em>Scott*, Ravichandran*, Funk, Collins, Liu (* joint first author)</em><br> ECCV 2020
+</div>
+                        <a class="pe-3" href="https://www.researchgate.net/publication/343139766_From_Image_to_Stability_Learning_Dynamics_from_Human_Pose">Paper</a>
+                    </div>
+                    
+            </div></li>
+    <li class="pb-1 container"><div class="row">
+                    <div class="col-12 ">
+                        <div class="block-title">AR TAIJI – mobile APP released by APPLE STORE</div>
+                        
+                        <a class="pe-3" href="https://apps.apple.com/us/app/ar-taiji/id1495725552">App Store Link</a>
+                    </div>
+                    
+            </div></li>
+    
+        </ul></div>
+        <h3 class="section-year">2019</h3>
+        <div class="px-5"><ul>
+            <li class="pb-1 container"><div class="row">
+                    <div class="col-12 ">
+                        <div class="block-title">New NSF Award:  Explicit and Implicit Regularity Perception</div>
+                        
+                        <a class="pe-3" href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1909315&HistoricalAwards=false">NSF Website</a>
+                    </div>
+                    
+            </div></li>
+    
+        </ul></div>
+        
+</div>
+
+<!-- End of what's new list -->
+
+    </div>
     <div class="section" id="researchBlock">
         <h2>Research</h2>
         
@@ -798,5 +889,28 @@
             });
         }
     </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+<script>
+const lightbox = GLightbox({ selector: '.glightbox' });
+</script>
+<script>
+    const images = document.querySelectorAll('.gallery-image-small');
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target); // fade in only once
+        }
+        });
+    }, {
+        threshold: 0.1
+    });
+
+    images.forEach(img => {
+        observer.observe(img);
+    });
+</script>
 </body>
 </html>

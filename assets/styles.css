@@ -90,6 +90,18 @@ h2 {
     transform: translateY(0);
 }
 
+/* What's New Specific */
+
+.whats-new-image {
+    position: relative;
+    top: -20%;
+
+    max-width: 200px;
+    height: 200px;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+
 /* Teaching Specific */
 
 .teaching-course-code {
@@ -100,4 +112,10 @@ h2 {
 
 .service-group-list {
     padding-left: 4rem;
+}
+
+@media (max-width: 768px) {
+    .whats-new-image {
+        position: inherit;
+    }
 }
