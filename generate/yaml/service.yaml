@@ -78,6 +78,14 @@ service:
       - type: Website
         url: http://wacv19.uccs.us/people/
 
+  - title: Keynote Speaker for Computational and Mathematical Models in Vision (MODVIS 2019)
+    year: 2019
+    links:
+      - type: Keynote Info
+        url: https://www.conf.purdue.edu/modvis/keynote.aspx
+      - type: Conference Website
+        url: https://www.conf.purdue.edu/modvis/default.aspx
+
   # 2018 -----------------------------------
 
   - title: Area-Chair for ACCV 2018
