@@ -61,7 +61,7 @@ def generate_service_grouped(year_map):
     return service_groups
 
 
-def generate_service_html(yaml_path, output_path):
+def generate_service_html(yaml_path, output_path=""):
     # Load the yaml file to read
     with open(yaml_path, 'r', encoding='utf-8') as f:
         data = yaml.safe_load(f)
@@ -74,9 +74,12 @@ def generate_service_html(yaml_path, output_path):
     service_groups_html = "".join(generate_service_grouped(service_blocks))
     service_html = service_template.format(service=service_groups_html)
     
-    Path(output_path).parent.mkdir(parents=True, exist_ok=True)
-    with open(output_path, 'w', encoding='utf-8') as f:
-        f.write(service_html)
+    if output_path != "":
+        Path(output_path).parent.mkdir(parents=True, exist_ok=True)
+        with open(output_path, 'w', encoding='utf-8') as f:
+            f.write(service_html)
+
+    return service_html
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Generate service list using YAML files.")

@@ -23,7 +23,7 @@ whats_new:
   - title: "New Class: Humanoid Robotics (CMPEN 497)"
     year: 2023
     desc: We study the kinematics and dynamics of state-of-the-art, programmable humanoid robots from principles of physics, computer vision, and AI to physical simulations and executions on real humanoid robots. We also explore the use of stability analysis in motion.
-    image: assets/images/Robotics_Poster_Spring2023.png
+    image: /assets/images/Robotics_Poster_Spring2023.png
     image_alt: Humanoid Robotics Poster Spring 2023
     links:
       - type: Website
@@ -112,4 +112,4 @@ whats_new:
   - title: "Taiji Four Gold-medalist"
     year: 2012
     desc: (Taiji Sword other-style, Taiji Quan mixed-form, Taiji Quan 24-form, Team-Weapon) at The International Chinese Martial Arts Championship 2012
-    image: assets/images/four_gold_medalist.png
+    image: /assets/images/four_gold_medalist.png

@@ -62,7 +62,7 @@ def generate_whats_new_grouped(year_map):
     return whats_new_groups
 
 
-def generate_whats_new_html(yaml_path, output_path):
+def generate_whats_new_html(yaml_path, output_path=""):
     # Load the yaml file to read
     with open(yaml_path, 'r', encoding='utf-8') as f:
         data = yaml.safe_load(f)
@@ -75,9 +75,12 @@ def generate_whats_new_html(yaml_path, output_path):
     whats_new_groups_html = "".join(generate_whats_new_grouped(whats_new_blocks))
     whats_new_html = whats_new_template.format(whats_new=whats_new_groups_html)
     
-    Path(output_path).parent.mkdir(parents=True, exist_ok=True)
-    with open(output_path, 'w', encoding='utf-8') as f:
-        f.write(whats_new_html)
+    if output_path != "":
+        Path(output_path).parent.mkdir(parents=True, exist_ok=True)
+        with open(output_path, 'w', encoding='utf-8') as f:
+            f.write(whats_new_html)
+
+    return whats_new_html
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Generate whats_new list using YAML files.")

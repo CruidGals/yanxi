@@ -12,7 +12,7 @@ html_boilerplate = """<!DOCTYPE html>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="stylesheet" href="/assets/styles.css">
 </head>
 <body>
     {navbar}
@@ -47,7 +47,7 @@ const lightbox = GLightbox({ selector: '.glightbox' });
 </script>"""
 
 # Sets the path of the assets folder
-assets_path = "assets/images/personal"
+assets_path = "/assets/images/personal"
 
 def generate_navbar_html(data):
     """
@@ -134,8 +134,8 @@ def generate_body(data):
     image_list = []
 
     for image_link in media['images']:
-        image_list.append(f'''<a href="assets/images/personal/{type}/{image_link['filename']}" class="glightbox" data-gallery="{type}-gallery">
-            <img src="assets/images/personal/{type}/{image_link['filename']}" class="img-fluid gallery-image-small p-3" alt="{image_link['filename']}">
+        image_list.append(f'''<a href="/assets/images/personal/{type}/{image_link['filename']}" class="glightbox" data-gallery="{type}-gallery">
+            <img src="/assets/images/personal/{type}/{image_link['filename']}" class="img-fluid gallery-image-small p-3" alt="{image_link['filename']}">
         </a>''')
     
     image_list_html = "\n".join(image_list)

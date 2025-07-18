@@ -53,7 +53,7 @@ def generate_research_grouped(year_map):
     return research_groups
 
 
-def generate_research_html(yaml_path, output_path):
+def generate_research_html(yaml_path, output_path=""):
     # Load the yaml file to read
     with open(yaml_path, 'r', encoding='utf-8') as f:
         data = yaml.safe_load(f)
@@ -66,9 +66,12 @@ def generate_research_html(yaml_path, output_path):
     research_groups_html = "".join(generate_research_grouped(research_blocks))
     research_html = research_template.format(research=research_groups_html)
     
-    Path(output_path).parent.mkdir(parents=True, exist_ok=True)
-    with open(output_path, 'w', encoding='utf-8') as f:
-        f.write(research_html)
+    if output_path != "":
+        Path(output_path).parent.mkdir(parents=True, exist_ok=True)
+        with open(output_path, 'w', encoding='utf-8') as f:
+            f.write(research_html)
+
+    return research_html
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Generate research list using YAML files.")
