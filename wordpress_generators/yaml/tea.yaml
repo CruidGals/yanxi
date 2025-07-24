@@ -1,0 +1,10 @@
+title: "Tea (Pictures):"
+
+# This configures the path to get images from the assets/images/personal/{type} directory
+type: tea
+
+media:
+  images:
+    - filename: https://sites.psu.edu/yul11web/files/2025/07/tea1.jpg
+    - filename: https://sites.psu.edu/yul11web/files/2025/07/tea2.png
+    - filename: https://sites.psu.edu/yul11web/files/2025/07/tea3.jpg

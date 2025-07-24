@@ -1,0 +1,110 @@
+/* Wordpress specific */
+
+.entry-header {
+    display: none;
+}
+
+/* Defualt Styles */
+
+a {
+    transition: color 0.1s ease-in-out;
+}
+
+a:hover {
+    color: orange;
+}
+
+body {
+    padding-top: 55px;
+}
+
+h2 {
+    margin: 0;
+}
+
+.section {
+    padding: 3rem 10vw;
+}
+
+/* Homepage */
+
+.home-image {
+    border-radius: 50%;   
+}
+
+/* Other tabs */
+
+.section-year {
+    padding-top: 1rem;
+    padding-left: 2rem;
+}
+.block {
+    padding: 0.5rem 3rem;
+}
+
+.block a, .service-bullet-point a { 
+    margin-right: 1rem;
+}
+
+.section-group .block:first-child {
+    padding-top: 0rem;
+}
+
+.block-title {
+    font-weight: bold;
+}
+
+.block-contributors, .block-metadata {
+    font-style: italic;
+}
+
+.service-bullet-point {
+    padding-bottom: 0.25rem;
+}
+
+ .whats-new-bullet-point {
+    margin-bottom: 0.5rem;
+ }
+
+.service-blocks, .whats-new-blocks {
+    padding-left: 3rem;
+}
+
+.whats-new-image {
+    text-decoration: none;
+    padding: 1rem;
+    border-radius: 20px;
+}
+
+/* Gallery GLightbox Shtuff */
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.gallery-image {
+    /* Site entering transition */
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease-in-out;
+}
+
+.gallery-image-small {
+    width: 100%;
+    height: 200px; /* fixed height you want */
+    aspect-ratio: 1;
+    object-fit: cover; /* crop the image nicely */
+
+    /* Site entering transition */
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease-in-out;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
