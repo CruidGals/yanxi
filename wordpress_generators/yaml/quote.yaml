@@ -1,8 +1,0 @@
-title: "Quotes (Pictures):"
-
-# This configures the path to get images from the assets/images/personal/{type} directory
-type: quote
-
-media:
-  images:
-    - filename: https://sites.psu.edu/yul11web/files/2025/07/quote.jpg
