@@ -60,7 +60,7 @@ def generate_whats_new_grouped(year_map):
     return whats_new_groups
 
 
-def generate_whats_new_html(yaml_path, output_path=""):
+def generate_whats_new_html(yaml_path="yaml/whats_new.yaml", output_path="output/whats_new.html"):
     # Load the yaml file to read
     with open(yaml_path, 'r', encoding='utf-8') as f:
         data = yaml.safe_load(f)
@@ -82,8 +82,8 @@ def generate_whats_new_html(yaml_path, output_path=""):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Generate whats_new list using YAML files.")
-    parser.add_argument("--yaml_path", default="wordpress_generators/yaml/whats_new.yaml", type=str, help="Path to YAML file.")
-    parser.add_argument("--output_path", default="wordpress_generators/output/whats_new.html", type=str, help="Path to the output file.")
+    parser.add_argument("--yaml_path", default="yaml/whats_new.yaml", type=str, help="Path to YAML file.")
+    parser.add_argument("--output_path", default="output/whats_new.html", type=str, help="Path to the output file.")
     args = parser.parse_args()
 
     generate_whats_new_html(args.yaml_path, args.output_path)

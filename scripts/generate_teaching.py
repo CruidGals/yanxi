@@ -53,7 +53,7 @@ def generate_teaching_grouped(year_map):
     return teaching_groups
 
 
-def generate_teaching_html(yaml_path, output_path=""):
+def generate_teaching_html(yaml_path="yaml/teaching.yaml", output_path="output/teaching.html"):
     # Load the yaml file to read
     with open(yaml_path, 'r', encoding='utf-8') as f:
         data = yaml.safe_load(f)
@@ -75,8 +75,8 @@ def generate_teaching_html(yaml_path, output_path=""):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Generate teaching list using YAML files.")
-    parser.add_argument("--yaml_path", default="wordpress_generators/yaml/teaching.yaml", type=str, help="Path to YAML file.")
-    parser.add_argument("--output_path", default="wordpress_generators/output/teaching.html", type=str, help="Path to the output file.")
+    parser.add_argument("--yaml_path", default="yaml/teaching.yaml", type=str, help="Path to YAML file.")
+    parser.add_argument("--output_path", default="output/teaching.html", type=str, help="Path to the output file.")
     args = parser.parse_args()
 
     generate_teaching_html(args.yaml_path, args.output_path)

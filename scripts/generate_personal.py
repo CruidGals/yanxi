@@ -26,8 +26,12 @@ def generate_gallery(data):
     return gallery_html
 
 def generate_personal_html(type):
-    yaml_path = f"wordpress_generators/yaml/{type}.yaml"
-    output_path = f"wordpress_generators/output/{type}.html"
+    """ Generate HTML for all the personal pages """
+
+    type = type.lower()
+
+    yaml_path = f"yaml/{type}.yaml"
+    output_path = f"output/{type}.html"
 
     # Load the yaml file to read
     with open(yaml_path, 'r', encoding='utf-8') as f:

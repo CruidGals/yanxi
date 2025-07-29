@@ -53,7 +53,7 @@ def generate_research_grouped(year_map):
     return research_groups
 
 
-def generate_research_html(yaml_path, output_path=""):
+def generate_research_html(yaml_path="yaml/research.yaml", output_path="output/research.html"):
     # Load the yaml file to read
     with open(yaml_path, 'r', encoding='utf-8') as f:
         data = yaml.safe_load(f)
@@ -75,8 +75,8 @@ def generate_research_html(yaml_path, output_path=""):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Generate research list using YAML files.")
-    parser.add_argument("--yaml_path", default="wordpress_generators/yaml/research.yaml", type=str, help="Path to YAML file.")
-    parser.add_argument("--output_path", default="wordpress_generators/output/research.html", type=str, help="Path to the output file.")
+    parser.add_argument("--yaml_path", default="yaml/research.yaml", type=str, help="Path to YAML file.")
+    parser.add_argument("--output_path", default="output/research.html", type=str, help="Path to the output file.")
     args = parser.parse_args()
 
     generate_research_html(args.yaml_path, args.output_path)

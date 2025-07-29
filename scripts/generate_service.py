@@ -61,7 +61,7 @@ def generate_service_grouped(year_map):
     return service_groups
 
 
-def generate_service_html(yaml_path, output_path=""):
+def generate_service_html(yaml_path="yaml/service.yaml", output_path="output/service.html"):
     # Load the yaml file to read
     with open(yaml_path, 'r', encoding='utf-8') as f:
         data = yaml.safe_load(f)
@@ -83,8 +83,8 @@ def generate_service_html(yaml_path, output_path=""):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Generate service list using YAML files.")
-    parser.add_argument("--yaml_path", default="wordpress_generators/yaml/service.yaml", type=str, help="Path to YAML file.")
-    parser.add_argument("--output_path", default="wordpress_generators/output/service.html", type=str, help="Path to the output file.")
+    parser.add_argument("--yaml_path", default="yaml/service.yaml", type=str, help="Path to YAML file.")
+    parser.add_argument("--output_path", default="output/service.html", type=str, help="Path to the output file.")
     args = parser.parse_args()
 
     generate_service_html(args.yaml_path, args.output_path)
